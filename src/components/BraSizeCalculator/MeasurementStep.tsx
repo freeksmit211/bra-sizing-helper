@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { MeasurementUnit } from '@/utils/calculateBraSize';
 import Instructions from './Instructions';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
+import SizeChart from './SizeChart';
 
 interface MeasurementStepProps {
   step: number;
@@ -92,17 +93,20 @@ const MeasurementStep: React.FC<MeasurementStepProps> = ({
           </p>
         </div>
         
-        <div className="flex items-center space-x-2">
-          <Label htmlFor="unit" className="text-sm">Unit</Label>
-          <Select value={unit} onValueChange={(value: MeasurementUnit) => onUnitChange(value)}>
-            <SelectTrigger className="w-[80px]" id="unit">
-              <SelectValue placeholder="Unit" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="in">inches</SelectItem>
-              <SelectItem value="cm">cm</SelectItem>
-            </SelectContent>
-          </Select>
+        <div className="flex items-center space-x-3">
+          <SizeChart />
+          <div className="flex items-center space-x-2">
+            <Label htmlFor="unit" className="text-sm">Unit</Label>
+            <Select value={unit} onValueChange={(value: MeasurementUnit) => onUnitChange(value)}>
+              <SelectTrigger className="w-[80px]" id="unit">
+                <SelectValue placeholder="Unit" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="in">inches</SelectItem>
+                <SelectItem value="cm">cm</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { BraSizeResult } from '@/utils/calculateBraSize';
 import { ArrowLeft, Share2, RefreshCw } from 'lucide-react';
 import { toast } from 'sonner';
+import SizeChart from './SizeChart';
 
 interface ResultsDisplayProps {
   result: BraSizeResult;
@@ -46,6 +47,8 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ result, onReset }) => {
             Based on your measurements
           </p>
         </div>
+        
+        <SizeChart />
       </div>
 
       <div className="bg-white rounded-xl shadow-soft mb-8 overflow-hidden border border-border">
