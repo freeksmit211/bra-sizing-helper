@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { BraSizeResult } from '@/utils/calculateBraSize';
 import { ArrowLeft, Share2, RefreshCw } from 'lucide-react';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 interface ResultsDisplayProps {
   result: BraSizeResult;
