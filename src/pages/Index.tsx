@@ -10,7 +10,14 @@ const Index = () => {
     <div className="min-h-screen flex flex-col bg-calculator-light-gray">
       <header className="bg-white border-b border-border py-4 px-6 sm:px-8 shadow-sm">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl font-medium text-primary">Sassy Lingerie Bra Size Calculator</h1>
+          <div className="flex items-center gap-3">
+            <img 
+              src="/lovable-uploads/281098e3-a7ca-4fd8-a74f-cc6e244f194a.png" 
+              alt="Sassy Lingerie Logo" 
+              className="h-12 sm:h-14" 
+            />
+            <h1 className="text-2xl sm:text-3xl font-medium text-primary">Sassy Lingerie Bra Size Calculator</h1>
+          </div>
         </div>
       </header>
 

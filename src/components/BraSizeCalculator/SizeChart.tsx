@@ -19,10 +19,15 @@ const SizeChart: React.FC<SizeChartProps> = ({ className }) => {
           </Button>
         </DialogTrigger>
         <DialogContent className="max-w-3xl overflow-auto max-h-[90vh]">
-          <div className="text-center mb-4">
+          <div className="text-center mb-4 flex items-center justify-center gap-2">
+            <img 
+              src="/lovable-uploads/281098e3-a7ca-4fd8-a74f-cc6e244f194a.png" 
+              alt="Sassy Lingerie Logo" 
+              className="h-8" 
+            />
             <h2 className="text-xl font-semibold text-primary">Bra Size Chart</h2>
-            <p className="text-sm text-muted-foreground">Measurements in centimeters</p>
           </div>
+          <p className="text-sm text-muted-foreground text-center mb-4">Measurements in centimeters</p>
           
           <div className="overflow-x-auto">
             <img 
