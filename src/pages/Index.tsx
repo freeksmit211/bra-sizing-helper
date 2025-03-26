@@ -1,7 +1,9 @@
+
 import React from 'react';
 import Calculator from '@/components/BraSizeCalculator/Calculator';
 import { Separator } from '@/components/ui/separator';
 import { Ruler, MoveHorizontal } from 'lucide-react';
+import MeasurementIllustrations from '@/components/BraSizeCalculator/MeasurementIllustrations';
 
 const Index = () => {
   return (
@@ -133,6 +135,9 @@ const Index = () => {
                   </ul>
                 </div>
               </div>
+              
+              {/* Add the measurement illustrations here */}
+              <MeasurementIllustrations />
             </div>
           </div>
 
