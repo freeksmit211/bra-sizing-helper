@@ -3,7 +3,7 @@ import React from 'react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { ChartIcon } from 'lucide-react';
+import { BarChart3 } from 'lucide-react';
 
 interface SizeChartProps {
   className?: string;
@@ -15,7 +15,7 @@ const SizeChart: React.FC<SizeChartProps> = ({ className }) => {
       <Dialog>
         <DialogTrigger asChild>
           <Button variant="outline" className="flex items-center gap-2">
-            <ChartIcon className="h-4 w-4" />
+            <BarChart3 className="h-4 w-4" />
             <span>Size Chart (in cm)</span>
           </Button>
         </DialogTrigger>
