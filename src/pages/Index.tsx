@@ -1,6 +1,7 @@
 import React from 'react';
 import Calculator from '@/components/BraSizeCalculator/Calculator';
 import { Separator } from '@/components/ui/separator';
+import { Ruler, MoveHorizontal } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -27,6 +28,111 @@ const Index = () => {
               <Separator className="mb-8" />
 
               <Calculator />
+            </div>
+          </div>
+
+          <div className="mt-12 max-w-4xl mx-auto animate-smooth-appear animate-delayed">
+            <h2 className="text-xl font-medium text-foreground mb-4">How to Measure for Your Bra Size</h2>
+            <div className="bg-white rounded-lg shadow-soft p-6 border border-border">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 shrink-0">
+                      <Ruler className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h3 className="text-base font-medium">Underbust Measurement</h3>
+                      <ol className="mt-2 space-y-3 text-sm text-muted-foreground">
+                        <li className="flex gap-2">
+                          <span className="font-medium text-primary">1.</span>
+                          <span>Wrap the measuring tape directly under your breasts, around your ribcage.</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="font-medium text-primary">2.</span>
+                          <span>The tape should be snug but not tight. You should be able to fit a finger between the tape and your body.</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="font-medium text-primary">3.</span>
+                          <span>Make sure the tape is parallel to the floor and not riding up in the back.</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="font-medium text-primary">4.</span>
+                          <span>Take a deep breath in and out, then record the measurement.</span>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 shrink-0">
+                      <MoveHorizontal className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h3 className="text-base font-medium">Bust Measurement</h3>
+                      <ol className="mt-2 space-y-3 text-sm text-muted-foreground">
+                        <li className="flex gap-2">
+                          <span className="font-medium text-primary">1.</span>
+                          <span>Wrap the measuring tape around your back and across the fullest part of your breasts (at nipple level).</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="font-medium text-primary">2.</span>
+                          <span>Keep the tape parallel to the ground and make sure it's not too tight or too loose.</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="font-medium text-primary">3.</span>
+                          <span>Stand straight with your arms relaxed at your sides.</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="font-medium text-primary">4.</span>
+                          <span>Record this measurement in either inches or centimeters.</span>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-accent/20 rounded-lg p-6 space-y-4">
+                  <h3 className="text-base font-medium text-primary">Tips for Accurate Measurements</h3>
+                  <ul className="space-y-3 text-sm text-muted-foreground">
+                    <li className="flex items-start">
+                      <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2 shrink-0 text-xs font-medium">
+                        ✓
+                      </div>
+                      <span>Use a soft fabric measuring tape, not a metal construction tape.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2 shrink-0 text-xs font-medium">
+                        ✓
+                      </div>
+                      <span>Measure directly against your skin, not over clothing.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2 shrink-0 text-xs font-medium">
+                        ✓
+                      </div>
+                      <span>For the most accurate results, take measurements while not wearing a bra.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2 shrink-0 text-xs font-medium">
+                        ✓
+                      </div>
+                      <span>Round to the nearest whole number for the underbust and bust measurements.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2 shrink-0 text-xs font-medium">
+                        ✓
+                      </div>
+                      <span>If you're between sizes, try both sizes and see which feels more comfortable.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2 shrink-0 text-xs font-medium">
+                        ✓
+                      </div>
+                      <span>Remeasure every 6-12 months as your body can change over time.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
