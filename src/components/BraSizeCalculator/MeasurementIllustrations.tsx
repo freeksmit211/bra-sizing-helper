@@ -9,38 +9,43 @@ type IllustrationProps = {
 const MeasurementIllustration: React.FC<IllustrationProps> = ({ type, className = '' }) => {
   return (
     <div className={`rounded-lg bg-white shadow-md overflow-hidden ${className}`}>
-      <div className="aspect-w-16 aspect-h-9 relative">
+      <div className="relative">
         {type === 'underbust' ? (
-          <div className="w-full h-full flex items-center justify-center bg-accent/30 p-4">
-            <div className="relative w-4/5 h-4/5">
-              {/* Simplified illustration of underbust measurement */}
-              <div className="absolute w-24 h-24 rounded-full bg-primary/10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-              <div className="absolute w-40 h-3 bg-primary/80 top-1/2 left-1/4 right-1/4 transform -translate-y-1/2"></div>
-              <div className="absolute top-[calc(50%-18px)] left-1/2 transform -translate-x-1/2 text-xs font-medium text-primary-foreground bg-primary px-2 py-1 rounded-full">
-                Underbust
-              </div>
+          <>
+            <div className="w-full aspect-[1.5/1] overflow-hidden">
+              <img 
+                src="/lovable-uploads/517945c9-e616-461a-82f0-d235cb0d779a.png" 
+                alt="How to measure underbust" 
+                className="w-full h-full object-contain"
+              />
             </div>
-          </div>
+            <div className="p-4 text-center bg-white">
+              <h3 className="text-base font-medium mb-2">Step 1 – Measure Your Band Size (Under-Bust)</h3>
+              <p className="text-sm text-muted-foreground">
+                Wrap a measuring tape around your chest, where your band sits, and ensure that it is snug, but not too tight or loose.
+                Round it off to the next even number if it's an odd measurement or in fractions.
+              </p>
+            </div>
+          </>
         ) : (
-          <div className="w-full h-full flex items-center justify-center bg-accent/30 p-4">
-            <div className="relative w-4/5 h-4/5">
-              {/* Simplified illustration of bust measurement */}
-              <div className="absolute w-32 h-32 rounded-full bg-primary/10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-              <div className="absolute w-48 h-3 bg-primary/80 top-1/2 left-1/6 right-1/6 transform -translate-y-1/2"></div>
-              <div className="absolute top-[calc(50%-18px)] left-1/2 transform -translate-x-1/2 text-xs font-medium text-primary-foreground bg-primary px-2 py-1 rounded-full">
-                Bust
-              </div>
+          <>
+            <div className="w-full aspect-[1.5/1] overflow-hidden">
+              <img 
+                src="/lovable-uploads/d9bf6b43-b000-420a-98ca-7145fe214649.png" 
+                alt="How to measure bust" 
+                className="w-full h-full object-contain"
+              />
             </div>
-          </div>
+            <div className="p-4 text-center bg-white">
+              <h3 className="text-base font-medium mb-2">Step 2 – Measure Your Cup Size (Over-Bust)</h3>
+              <p className="text-sm text-muted-foreground">
+                Wrap the tape around the fullest part of your breasts, at the nipple level. 
+                This will give you an accurate measurement.
+                Round it off to the nearest or next whole number.
+              </p>
+            </div>
+          </>
         )}
-      </div>
-      <div className="p-3 text-center bg-white">
-        <p className="text-sm text-muted-foreground">
-          {type === 'underbust' 
-            ? 'Measure directly under your breasts, around your ribcage'
-            : 'Measure at the fullest part of your breasts, keeping tape parallel to floor'
-          }
-        </p>
       </div>
     </div>
   );
@@ -48,7 +53,7 @@ const MeasurementIllustration: React.FC<IllustrationProps> = ({ type, className 
 
 const MeasurementIllustrations: React.FC = () => {
   return (
-    <div className="grid md:grid-cols-2 gap-4 mt-6">
+    <div className="grid md:grid-cols-2 gap-6 mt-8">
       <MeasurementIllustration type="underbust" />
       <MeasurementIllustration type="bust" />
     </div>
