@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Calculator from '@/components/BraSizeCalculator/Calculator';
 import { Separator } from '@/components/ui/separator';
@@ -8,7 +7,7 @@ const Index = () => {
     <div className="min-h-screen flex flex-col bg-calculator-light-gray">
       <header className="bg-white border-b border-border py-4 px-6 sm:px-8 shadow-sm">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl font-medium text-primary">Bra Size Calculator</h1>
+          <h1 className="text-2xl sm:text-3xl font-medium text-primary">Sassy Lingerie Bra Size Calculator</h1>
         </div>
       </header>
 
@@ -94,7 +93,7 @@ const Index = () => {
       <footer className="bg-white border-t border-border py-6 px-6 sm:px-8 mt-8">
         <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
           <p>This calculator provides an estimate of your bra size. For the best fit, we recommend trying on bras in your calculated size and sister sizes.</p>
-          <p className="mt-2">© {new Date().getFullYear()} Bra Size Calculator. All rights reserved.</p>
+          <p className="mt-2">© {new Date().getFullYear()} Sassy Lingerie Bra Size Calculator. All rights reserved.</p>
         </div>
       </footer>
     </div>
