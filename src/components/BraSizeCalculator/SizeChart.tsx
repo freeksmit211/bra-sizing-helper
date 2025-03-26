@@ -26,7 +26,7 @@ const SizeChart: React.FC<SizeChartProps> = ({ className }) => {
           
           <div className="overflow-x-auto">
             <img 
-              src="/lovable-uploads/213344ab-12f1-4d80-87ad-2bfa02d17f96.png" 
+              src="/lovable-uploads/97ffdff2-a5de-443a-a89a-4203c635103a.png" 
               alt="Bra size chart showing underbust and bust measurements with corresponding cup sizes" 
               className="w-full"
             />
