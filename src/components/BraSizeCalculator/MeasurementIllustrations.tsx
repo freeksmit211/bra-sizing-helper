@@ -14,7 +14,7 @@ const MeasurementIllustration: React.FC<IllustrationProps> = ({ type, className 
           <>
             <div className="w-full aspect-[1.5/1] overflow-hidden">
               <img 
-                src="/lovable-uploads/a1661d43-69fb-4058-8303-e2cbbbb07e06.png" 
+                src="/lovable-uploads/b862b507-62ab-485b-acaf-313d10787d27.png" 
                 alt="How to measure underbust" 
                 className="w-full h-full object-contain"
               />
@@ -31,7 +31,7 @@ const MeasurementIllustration: React.FC<IllustrationProps> = ({ type, className 
           <>
             <div className="w-full aspect-[1.5/1] overflow-hidden">
               <img 
-                src="/lovable-uploads/cda38bbc-b8a1-4fe3-b054-deb77e793067.png" 
+                src="/lovable-uploads/64dcd7f5-db0e-4867-afb5-b079a68da02c.png" 
                 alt="How to measure bust" 
                 className="w-full h-full object-contain"
               />
