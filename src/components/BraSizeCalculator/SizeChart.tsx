@@ -2,7 +2,6 @@
 import React from 'react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { BarChart3 } from 'lucide-react';
 
 interface SizeChartProps {
@@ -27,7 +26,7 @@ const SizeChart: React.FC<SizeChartProps> = ({ className }) => {
           
           <div className="overflow-x-auto">
             <img 
-              src="/lovable-uploads/c63878da-f87b-4d1b-8af0-53b4dc62af5d.png" 
+              src="/lovable-uploads/213344ab-12f1-4d80-87ad-2bfa02d17f96.png" 
               alt="Bra size chart showing underbust and bust measurements with corresponding cup sizes" 
               className="w-full"
             />
